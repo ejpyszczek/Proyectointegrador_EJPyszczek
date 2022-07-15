@@ -1,12 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.portfolio.ejp.Controller;
 
-
+import com.portfolio.ejp.Dto.dtoExperiencia;
+import com.portfolio.ejp.Entity.Experiencia;
 import com.portfolio.ejp.Security.Controller.Mensaje;
+import com.portfolio.ejp.Service.SExperiencia;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -87,3 +85,4 @@ public class CExperiencia {
              
     }
 }
+
