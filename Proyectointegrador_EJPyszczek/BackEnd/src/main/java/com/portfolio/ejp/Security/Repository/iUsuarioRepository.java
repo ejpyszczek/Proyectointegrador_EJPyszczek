@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.portfolio.ejp.Security.Repository;
 
 import com.portfolio.ejp.Security.Entity.Usuario;
@@ -11,8 +8,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface iUsuarioRepository extends JpaRepository<Usuario, Integer>{
-Optional<Usuario> findByNombreUsuario(String nombreUsuario); 
-  
-boolean existsByNombreUsuario(String nombreUsuario);
-boolean existsByEmail(String email);
+    Optional<Usuario> findByNombreUsuario(String nombreUsuario);
+    
+    boolean existsByNombreUsuario(String nombreUsuario);
+    boolean existsByEmail(String email);
 }

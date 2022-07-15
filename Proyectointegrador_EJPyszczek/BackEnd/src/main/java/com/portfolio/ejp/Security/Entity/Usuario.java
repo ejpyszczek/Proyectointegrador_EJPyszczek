@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.portfolio.ejp.Security.Entity;
 
 import java.util.HashSet;
@@ -32,8 +29,8 @@ public class Usuario {
     @NotNull
     private String password;
     @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
-    private Set <Rol> Roles = new HashSet<>();
+    @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name ="usuario_id"), inverseJoinColumns = @JoinColumn(name = "rol_id"))
+    private Set<Rol> roles = new HashSet<>();
     
     //Constructores
 
@@ -90,12 +87,11 @@ public class Usuario {
     }
 
     public Set<Rol> getRoles() {
-        return Roles;
+        return roles;
     }
 
-    public void setRoles(Set<Rol> Roles) {
-        this.Roles = Roles;
+    public void setRoles(Set<Rol> roles) {
+        this.roles = roles;
     }
-       
     
 }

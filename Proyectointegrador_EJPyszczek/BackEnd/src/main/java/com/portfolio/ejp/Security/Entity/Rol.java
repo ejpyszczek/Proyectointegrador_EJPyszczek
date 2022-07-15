@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.portfolio.ejp.Security.Entity;
 
 import com.portfolio.ejp.Security.Enums.RolNombre;
@@ -14,21 +11,20 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class Rol{
+public class Rol {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotNull
     @Enumerated(EnumType.STRING)
-    private RolNombre RolNombre;
+    private RolNombre rolNombre;
     
     //Constructor
-
     public Rol() {
     }
 
-    public Rol(RolNombre RolNombre) {
-        this.RolNombre = RolNombre;
+    public Rol(RolNombre rolNombre) {
+        this.rolNombre = rolNombre;
     }
     
     //Getter y Setter
@@ -42,11 +38,12 @@ public class Rol{
     }
 
     public RolNombre getRolNombre() {
-        return RolNombre;
+        return rolNombre;
     }
 
-    public void setRolNombre(RolNombre RolNombre) {
-        this.RolNombre = RolNombre;
+    public void setRolNombre(RolNombre rolNombre) {
+        this.rolNombre = rolNombre;
     }
+    
     
 }

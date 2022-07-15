@@ -2,8 +2,6 @@
 package com.portfolio.ejp.Security.jwt;
 
 
-
-
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

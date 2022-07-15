@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
+
 package com.portfolio.ejp.Security.Repository;
 
 import com.portfolio.ejp.Security.Entity.Rol;
@@ -12,6 +9,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface iRolRepository extends JpaRepository<Rol, Integer>{
-   Optional<Rol> findByRolNombre(RolNombre rolNombre); 
-    
+    Optional<Rol> findByRolNombre(RolNombre rolNombre);
 }
