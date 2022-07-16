@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { window } from 'rxjs';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -25,8 +24,8 @@ export class LogoAPComponent implements OnInit {
     this.tokenService.logOut();
     window.location.reload();
   }
-  
-  login(){
-    this.router.navigate(['/login'])}
 
+  login(){
+    this.router.navigate(['/login'])
+  }
 }
